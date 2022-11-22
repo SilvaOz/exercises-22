@@ -1,0 +1,53 @@
+body {
+    background: lightgray;
+    margin: 0;
+    padding-top: 5rem;
+}
+
+ul.gallery li {
+    position: relative;
+    float: left;
+    padding: 10px 10px 25px 10px;
+    background: #eee;
+    list-style: none;
+    box-shadow: 1px 2px 3px black;
+
+
+}
+
+li:nth-child(1) {
+    transform: rotate(-10deg);
+    z-index: 1;
+
+
+}
+
+li:nth-child(3) {
+    transform: rotate(10deg);
+    z-index: 2;
+
+
+}
+
+li:nth-child(4) {
+    transform: rotate(-10deg);
+    z-index: 1;
+
+
+}
+
+li:nth-child(5) {
+    transform: rotate(10deg);
+    z-index: 1;
+
+}
+
+
+
+li:hover {
+    /* top: 0px;
+    opacity: 0.5; */
+    box-shadow: 5px 10px 100px black;
+    -webkit-transform: scale(1.1, 1.1);
+    z-index: 20;
+}

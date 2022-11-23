@@ -1,53 +1,84 @@
-body {
-    background: lightgray;
+* {
     margin: 0;
-    padding-top: 5rem;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4B5320;
+    /* background-image: */
 }
 
-ul.gallery li {
-    position: relative;
-    float: left;
-    padding: 10px 10px 25px 10px;
-    background: #eee;
-    list-style: none;
+img {
+    width: 20vw;
+    background-color: #eee;
     box-shadow: 1px 2px 3px black;
-
-
+    padding: 10px 10px 40px 10px;
+    /*  padding: 0.2rem;
+    padding-bottom: 0.8rem;  */
+    opacity: 0.8;
+    filter: grayscale(90%);
+    transition: 2s;
+    z-index: auto;
 }
 
-li:nth-child(1) {
-    transform: rotate(-10deg);
+#img1 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    transform: rotate(-20deg);
+}
+
+#img2 {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    transform: rotate(7deg);
+}
+
+#img3 {
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    transform: rotate(18deg);
+}
+
+#img4 {
+    position: absolute;
+    top: 60%;
+    right: 40%;
+    transform: rotate(9deg);
+}
+
+#img1:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    opacity: 1;
     z-index: 1;
-
-
+    box-shadow: 5px 10px 100px #808000;
+    cursor: pointer;
 }
 
-li:nth-child(3) {
-    transform: rotate(10deg);
-    z-index: 2;
-
-
-}
-
-li:nth-child(4) {
-    transform: rotate(-10deg);
+#img2:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    opacity: 1;
     z-index: 1;
-
-
+    box-shadow: 5px 10px 100px #808000;
+    cursor: pointer;
 }
 
-li:nth-child(5) {
-    transform: rotate(10deg);
+#img3:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    opacity: 1;
     z-index: 1;
-
+    box-shadow: 5px 10px 100px #808000;
+    cursor: pointer;
 }
 
-
-
-li:hover {
-    /* top: 0px;
-    opacity: 0.5; */
-    box-shadow: 5px 10px 100px black;
-    -webkit-transform: scale(1.1, 1.1);
-    z-index: 20;
+#img4:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 1;
+    box-shadow: 5px 10px 100px #808000;
+    cursor: pointer;
 }
